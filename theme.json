@@ -1,0 +1,100 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": "2",
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "800px",
+			"wideSize": "1200px"
+		},
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#ffbb02",
+					"name": "Primair"
+				},
+				{
+					"slug": "primary-light",
+					"color": "#fec011",
+					"name": "Primair licht"
+				},
+				{
+					"slug": "primary-dark",
+					"color": "#fedd35",
+					"name": "Primair donker"
+				},
+				{
+					"slug": "secondary",
+					"color": "#027d7d",
+					"name": "Secundair"
+				},
+				{
+					"slug": "accent-pink",
+					"color": "#de3d83",
+					"name": "Accent roze"
+				},
+				{
+					"slug": "accent-purple",
+					"color": "#9d4eb6",
+					"name": "Accent paars"
+				},
+				{
+					"slug": "accent-teal",
+					"color": "#00b8b8",
+					"name": "Accent turquoise"
+				},
+				{
+					"slug": "accent-green",
+					"color": "#4756ca",
+					"name": "Accent groen"
+				},
+				{
+					"slug": "text-dark",
+					"color": "#000000",
+					"name": "Tekst donker"
+				},
+				{
+					"slug": "text-light",
+					"color": "#ffffff",
+					"name": "Tekst licht"
+				},
+				{
+					"slug": "text-muted",
+					"color": "#707070",
+					"name": "Tekst gedempt"
+				},
+				{
+					"slug": "border",
+					"color": "#dadada",
+					"name": "Rand"
+				},
+				{
+					"slug": "background-dark",
+					"color": "#222222",
+					"name": "Achtergrond donker"
+				},
+				{
+					"slug": "error",
+					"color": "#ff0000",
+					"name": "Fout"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Raleway, Helvetica, Arial, sans-serif",
+					"slug": "raleway",
+					"name": "Raleway"
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--raleway)",
+			"fontSize": "16px"
+		}
+	}
+}

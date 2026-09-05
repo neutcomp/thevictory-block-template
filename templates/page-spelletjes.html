@@ -1,0 +1,96 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","anchor":"main","className":"classes-wrapper","layout":{"type":"constrained"}} -->
+<main id="main" class="wp-block-group classes-wrapper">
+  <!-- wp:group {"className":"classes-entry","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group classes-entry">
+    <!-- wp:heading {"level":1} -->
+    <h1 class="wp-block-heading">Tafeltennis spelletjes</h1>
+    <!-- /wp:heading -->
+
+    <!-- wp:paragraph -->
+    <p>
+      Hier onder vind u een lijst van heel veel verschillende tafeltennis
+      spelletjes. Deze tafeltennis spelletjes kunt u op de camping, toernooien
+      of op een kindertafeltennis feest uitvoeren. De tafeltennis spelletjes
+      zijn soms voor 2 of meer spelers. Ook staat er bij elke spel hoeveel
+      tafels er nodig zijn. De moeilijkheidsgraad bij de tafeltennis spelletjes
+      geven aan of het voor beginners of gevorderden zijn te spelen.
+    </p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:query {"query":{"postType":"ttv_spelletjes","perPage":50,"order":"asc","orderBy":"meta_value","metaKey":"niveau"},"displayLayout":{"type":"list"}} -->
+  <div class="wp-block-query">
+    <!-- wp:post-template -->
+    <!-- wp:group {"className":"class-container class-container-yellow","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group class-container class-container-yellow">
+      <!-- wp:post-title {"level":2} /-->
+
+      <!-- wp:group {"className":"class-container-content","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group class-container-content">
+        <!-- wp:group {"className":"class-instructor-section","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group class-instructor-section">
+          <!-- wp:heading {"level":3} -->
+          <h3 class="wp-block-heading">Aantal personen</h3>
+          <!-- /wp:heading -->
+
+          <!-- wp:paragraph {"className":"instructor-name"} -->
+          <p class="instructor-name">[thevictory_meta key="aantal_personen"]</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:group {"className":"class-skill-section","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group class-skill-section">
+          <!-- wp:heading {"level":3} -->
+          <h3 class="wp-block-heading">Niveau</h3>
+          <!-- /wp:heading -->
+
+          <!-- wp:paragraph {"className":"skill-level"} -->
+          <p class="skill-level">[thevictory_meta key="niveau"]</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:group {"className":"class-instructor-section","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group class-instructor-section">
+          <!-- wp:heading {"level":3} -->
+          <h3 class="wp-block-heading">Benodigdheden</h3>
+          <!-- /wp:heading -->
+
+          <!-- wp:paragraph {"className":"instructor-name"} -->
+          <p class="instructor-name">[thevictory_meta key="benodigdheden"]</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:post-featured-image {"sizeSlug":"medium","className":"class-length-section thumbnail"} /-->
+
+        <!-- wp:group {"className":"class-length-section","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group class-length-section">
+          <!-- wp:heading {"level":3} -->
+          <h3 class="wp-block-heading">Beschrijving</h3>
+          <!-- /wp:heading -->
+
+          <!-- wp:post-content {"className":"class-description"} /-->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+    <!-- /wp:post-template -->
+
+    <!-- wp:query-no-results -->
+    <!-- wp:paragraph -->
+    <p>Er zijn geen spelletjes gevonden.</p>
+    <!-- /wp:paragraph -->
+    <!-- /wp:query-no-results -->
+  </div>
+  <!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

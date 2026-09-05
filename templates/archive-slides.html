@@ -1,0 +1,51 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"classes-wrapper","layout":{"type":"constrained"}} -->
+<main class="wp-block-group classes-wrapper">
+  <!-- wp:group {"className":"classes-entry","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group classes-entry">
+    <!-- wp:heading {"level":1} -->
+    <h1 class="wp-block-heading">TV slides</h1>
+    <!-- /wp:heading -->
+
+    <!-- wp:paragraph -->
+    <p>Hier onder vind u een lijst van TV Slides</p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:query {"query":{"postType":"slides","perPage":50,"order":"asc","orderBy":"date"},"displayLayout":{"type":"list"}} -->
+  <div class="wp-block-query">
+    <!-- wp:post-template -->
+    <!-- wp:group {"className":"class-container","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group class-container">
+      <!-- wp:post-title {"level":2} /-->
+
+      <!-- wp:group {"className":"class-container-content","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group class-container-content">
+        <!-- wp:group {"className":"class-length-section","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group class-length-section">
+          <!-- wp:heading {"level":3} -->
+          <h3 class="wp-block-heading">Beschrijving</h3>
+          <!-- /wp:heading -->
+
+          <!-- wp:post-content {"className":"class-description"} /-->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+    <!-- /wp:post-template -->
+
+    <!-- wp:query-no-results -->
+    <!-- wp:paragraph -->
+    <p>Er zijn geen TV slides gevonden.</p>
+    <!-- /wp:paragraph -->
+    <!-- /wp:query-no-results -->
+  </div>
+  <!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

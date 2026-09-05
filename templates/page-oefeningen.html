@@ -1,0 +1,68 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","anchor":"main","className":"classes-wrapper","layout":{"type":"constrained"}} -->
+<main id="main" class="wp-block-group classes-wrapper">
+  <!-- wp:group {"className":"classes-entry","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group classes-entry">
+    <!-- wp:heading {"level":1} -->
+    <h1 class="wp-block-heading">Tafeltennis oefeningen</h1>
+    <!-- /wp:heading -->
+
+    <!-- wp:paragraph -->
+    <p>
+      Hier onder zie je een overzicht van verschillende trainingsvormen bij
+      tafeltennis.
+    </p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:query {"query":{"postType":"ttv_oefeningen","perPage":50,"order":"asc","orderBy":"title"},"displayLayout":{"type":"list"}} -->
+  <div class="wp-block-query">
+    <!-- wp:post-template -->
+    <!-- wp:group {"className":"class-container class-container-yellow","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group class-container class-container-yellow">
+      <!-- wp:post-title {"level":2} /-->
+
+      <!-- wp:group {"className":"class-container-content","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group class-container-content">
+        <!-- wp:group {"className":"class-instructor-section","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group class-instructor-section">
+          <!-- wp:heading {"level":3} -->
+          <h3 class="wp-block-heading">Niveau</h3>
+          <!-- /wp:heading -->
+
+          <!-- wp:paragraph {"className":"skill-level"} -->
+          <p class="skill-level">[thevictory_meta key="niveau"]</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:post-featured-image {"sizeSlug":"medium","className":"class-length-section thumbnail"} /-->
+
+        <!-- wp:group {"className":"class-length-section","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group class-length-section">
+          <!-- wp:heading {"level":3} -->
+          <h3 class="wp-block-heading">Beschrijving</h3>
+          <!-- /wp:heading -->
+
+          <!-- wp:post-content {"className":"class-description"} /-->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+    <!-- /wp:post-template -->
+
+    <!-- wp:query-no-results -->
+    <!-- wp:paragraph -->
+    <p>Er zijn geen oefeningen gevonden.</p>
+    <!-- /wp:paragraph -->
+    <!-- /wp:query-no-results -->
+  </div>
+  <!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
